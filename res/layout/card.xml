@@ -1,0 +1,162 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 小鱼状态卡：一张表看三台设备
+     表头一行（电量 / 网络 / 存储 / 温度），下面三行各一台，四列用竖线隔开。 -->
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:background="@drawable/card_bg"
+    android:padding="6dp">
+
+    <!-- ── 表头 ── -->
+    <LinearLayout android:id="@+id/rh" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1" android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView android:id="@+id/n0" android:layout_width="70dp" android:layout_height="wrap_content"
+            android:textSize="10sp" android:textColor="#FF8899AA" android:singleLine="true"
+            android:text="设备" />
+
+        <TextView android:layout_width="1dp" android:layout_height="match_parent"
+            android:background="#33FFFFFF" />
+
+        <TextView android:layout_width="0dp" android:layout_weight="1.1" android:layout_height="wrap_content"
+            android:textSize="10sp" android:textColor="#FF8899AA" android:gravity="center"
+            android:singleLine="true" android:text="电量" />
+
+        <TextView android:layout_width="1dp" android:layout_height="match_parent"
+            android:background="#33FFFFFF" />
+
+        <TextView android:layout_width="0dp" android:layout_weight="1.15" android:layout_height="wrap_content"
+            android:textSize="10sp" android:textColor="#FF8899AA" android:gravity="center"
+            android:singleLine="true" android:text="网络" />
+
+        <TextView android:layout_width="1dp" android:layout_height="match_parent"
+            android:background="#33FFFFFF" />
+
+        <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+            android:textSize="10sp" android:textColor="#FF8899AA" android:gravity="center"
+            android:singleLine="true" android:text="存储" />
+
+        <TextView android:layout_width="1dp" android:layout_height="match_parent"
+            android:background="#33FFFFFF" />
+
+        <TextView android:layout_width="0dp" android:layout_weight="1" android:layout_height="wrap_content"
+            android:textSize="10sp" android:textColor="#FF8899AA" android:gravity="center"
+            android:singleLine="true" android:text="温度" />
+    </LinearLayout>
+
+    <!-- ── 第 1 台：本机 ── -->
+    <LinearLayout android:id="@+id/r1" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1.15" android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView android:id="@+id/n1" android:layout_width="70dp" android:layout_height="wrap_content"
+            android:textSize="11sp" android:textStyle="bold" android:singleLine="true"
+            android:textColor="#FFFFFFFF" android:text="小米17PM" />
+
+        <TextView android:layout_width="1dp" android:layout_height="match_parent"
+            android:background="#33FFFFFF" />
+
+        <TextView android:id="@+id/a1" android:layout_width="0dp" android:layout_weight="1.1"
+            android:layout_height="wrap_content" android:textSize="12sp" android:singleLine="true"
+            android:gravity="center" android:textColor="#FF7FD1B9" android:text="--" />
+
+        <TextView android:layout_width="1dp" android:layout_height="match_parent"
+            android:background="#33FFFFFF" />
+
+        <TextView android:id="@+id/b1" android:layout_width="0dp" android:layout_weight="1.15"
+            android:layout_height="wrap_content" android:textSize="12sp" android:singleLine="true"
+            android:gravity="center" android:textColor="#FF7FD1B9" android:text="--" />
+
+        <TextView android:layout_width="1dp" android:layout_height="match_parent"
+            android:background="#33FFFFFF" />
+
+        <TextView android:id="@+id/c1" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:textSize="12sp" android:singleLine="true"
+            android:gravity="center" android:textColor="#FF7FD1B9" android:text="--" />
+
+        <TextView android:layout_width="1dp" android:layout_height="match_parent"
+            android:background="#33FFFFFF" />
+
+        <TextView android:id="@+id/d1" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:textSize="12sp" android:singleLine="true"
+            android:gravity="center" android:textColor="#FF7FD1B9" android:text="--" />
+    </LinearLayout>
+
+    <!-- ── 第 2 台：K40 ── -->
+    <LinearLayout android:id="@+id/r2" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1.15" android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView android:id="@+id/n2" android:layout_width="70dp" android:layout_height="wrap_content"
+            android:textSize="11sp" android:textStyle="bold" android:singleLine="true"
+            android:textColor="#FFFFFFFF" android:text="红米K40" />
+
+        <TextView android:layout_width="1dp" android:layout_height="match_parent"
+            android:background="#33FFFFFF" />
+
+        <TextView android:id="@+id/a2" android:layout_width="0dp" android:layout_weight="1.1"
+            android:layout_height="wrap_content" android:textSize="12sp" android:singleLine="true"
+            android:gravity="center" android:textColor="#FFB9C6D4" android:text="--" />
+
+        <TextView android:layout_width="1dp" android:layout_height="match_parent"
+            android:background="#33FFFFFF" />
+
+        <TextView android:id="@+id/b2" android:layout_width="0dp" android:layout_weight="1.15"
+            android:layout_height="wrap_content" android:textSize="12sp" android:singleLine="true"
+            android:gravity="center" android:textColor="#FFB9C6D4" android:text="--" />
+
+        <TextView android:layout_width="1dp" android:layout_height="match_parent"
+            android:background="#33FFFFFF" />
+
+        <TextView android:id="@+id/c2" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:textSize="12sp" android:singleLine="true"
+            android:gravity="center" android:textColor="#FFB9C6D4" android:text="--" />
+
+        <TextView android:layout_width="1dp" android:layout_height="match_parent"
+            android:background="#33FFFFFF" />
+
+        <TextView android:id="@+id/d2" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:textSize="12sp" android:singleLine="true"
+            android:gravity="center" android:textColor="#FFB9C6D4" android:text="--" />
+    </LinearLayout>
+
+    <!-- ── 第 3 台：电脑 ── -->
+    <LinearLayout android:id="@+id/r3" android:layout_width="match_parent"
+        android:layout_height="0dp" android:layout_weight="1.15" android:orientation="horizontal"
+        android:gravity="center_vertical">
+
+        <TextView android:id="@+id/n3" android:layout_width="70dp" android:layout_height="wrap_content"
+            android:textSize="11sp" android:textStyle="bold" android:singleLine="true"
+            android:textColor="#FFFFFFFF" android:text="电脑" />
+
+        <TextView android:layout_width="1dp" android:layout_height="match_parent"
+            android:background="#33FFFFFF" />
+
+        <TextView android:id="@+id/a3" android:layout_width="0dp" android:layout_weight="1.1"
+            android:layout_height="wrap_content" android:textSize="12sp" android:singleLine="true"
+            android:gravity="center" android:textColor="#FFB9C6D4" android:text="--" />
+
+        <TextView android:layout_width="1dp" android:layout_height="match_parent"
+            android:background="#33FFFFFF" />
+
+        <TextView android:id="@+id/b3" android:layout_width="0dp" android:layout_weight="1.15"
+            android:layout_height="wrap_content" android:textSize="12sp" android:singleLine="true"
+            android:gravity="center" android:textColor="#FFB9C6D4" android:text="--" />
+
+        <TextView android:layout_width="1dp" android:layout_height="match_parent"
+            android:background="#33FFFFFF" />
+
+        <TextView android:id="@+id/c3" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:textSize="12sp" android:singleLine="true"
+            android:gravity="center" android:textColor="#FFB9C6D4" android:text="--" />
+
+        <TextView android:layout_width="1dp" android:layout_height="match_parent"
+            android:background="#33FFFFFF" />
+
+        <TextView android:id="@+id/d3" android:layout_width="0dp" android:layout_weight="1"
+            android:layout_height="wrap_content" android:textSize="12sp" android:singleLine="true"
+            android:gravity="center" android:textColor="#FFB9C6D4" android:text="--" />
+    </LinearLayout>
+</LinearLayout>
